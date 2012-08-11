@@ -1,0 +1,216 @@
+{
+  "type": "LOL", 
+  "body": [
+    {
+      "type": "Macro", 
+      "id": {
+        "type": "Identifier", 
+        "name": "fib"
+      }, 
+      "args": [
+        {
+          "type": "VariableExpression", 
+          "id": {
+            "type": "Identifier", 
+            "name": "n"
+          }
+        }
+      ], 
+      "expression": {
+        "type": "ConditionalExpression", 
+        "test": {
+          "type": "BinaryExpression", 
+          "operator": {
+            "type": "BinaryOperator", 
+            "token": "=="
+          }, 
+          "left": {
+            "type": "VariableExpression", 
+            "id": {
+              "type": "Identifier", 
+              "name": "n"
+            }
+          }, 
+          "right": {
+            "type": "Literal", 
+            "value": 0
+          }
+        }, 
+        "consequent": {
+          "type": "Literal", 
+          "value": 0
+        }, 
+        "alternate": {
+          "type": "ConditionalExpression", 
+          "test": {
+            "type": "BinaryExpression", 
+            "operator": {
+              "type": "BinaryOperator", 
+              "token": "=="
+            }, 
+            "left": {
+              "type": "VariableExpression", 
+              "id": {
+                "type": "Identifier", 
+                "name": "n"
+              }
+            }, 
+            "right": {
+              "type": "Literal", 
+              "value": 1
+            }
+          }, 
+          "consequent": {
+            "type": "Literal", 
+            "value": 1
+          }, 
+          "alternate": {
+            "type": "BinaryExpression", 
+            "operator": {
+              "type": "BinaryOperator", 
+              "token": "+"
+            }, 
+            "left": {
+              "type": "CallExpression", 
+              "callee": {
+                "type": "Identifier", 
+                "name": "fib"
+              }, 
+              "arguments": [
+                {
+                  "type": "BinaryExpression", 
+                  "operator": {
+                    "type": "BinaryOperator", 
+                    "token": "-"
+                  }, 
+                  "left": {
+                    "type": "VariableExpression", 
+                    "id": {
+                      "type": "Identifier", 
+                      "name": "n"
+                    }
+                  }, 
+                  "right": {
+                    "type": "Literal", 
+                    "value": 1
+                  }
+                }
+              ]
+            }, 
+            "right": {
+              "type": "CallExpression", 
+              "callee": {
+                "type": "Identifier", 
+                "name": "fib"
+              }, 
+              "arguments": [
+                {
+                  "type": "BinaryExpression", 
+                  "operator": {
+                    "type": "BinaryOperator", 
+                    "token": "-"
+                  }, 
+                  "left": {
+                    "type": "VariableExpression", 
+                    "id": {
+                      "type": "Identifier", 
+                      "name": "n"
+                    }
+                  }, 
+                  "right": {
+                    "type": "Literal", 
+                    "value": 2
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }, 
+      "attrs": null
+    }, 
+    {
+      "type": "Macro", 
+      "id": {
+        "type": "Identifier", 
+        "name": "fac"
+      }, 
+      "args": [
+        {
+          "type": "VariableExpression", 
+          "id": {
+            "type": "Identifier", 
+            "name": "n"
+          }
+        }
+      ], 
+      "expression": {
+        "type": "ConditionalExpression", 
+        "test": {
+          "type": "BinaryExpression", 
+          "operator": {
+            "type": "BinaryOperator", 
+            "token": "=="
+          }, 
+          "left": {
+            "type": "VariableExpression", 
+            "id": {
+              "type": "Identifier", 
+              "name": "n"
+            }
+          }, 
+          "right": {
+            "type": "Literal", 
+            "value": 0
+          }
+        }, 
+        "consequent": {
+          "type": "Literal", 
+          "value": 1
+        }, 
+        "alternate": {
+          "type": "BinaryExpression", 
+          "operator": {
+            "type": "BinaryOperator", 
+            "token": "*"
+          }, 
+          "left": {
+            "type": "VariableExpression", 
+            "id": {
+              "type": "Identifier", 
+              "name": "n"
+            }
+          }, 
+          "right": {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "fac"
+            }, 
+            "arguments": [
+              {
+                "type": "BinaryExpression", 
+                "operator": {
+                  "type": "BinaryOperator", 
+                  "token": "-"
+                }, 
+                "left": {
+                  "type": "VariableExpression", 
+                  "id": {
+                    "type": "Identifier", 
+                    "name": "n"
+                  }
+                }, 
+                "right": {
+                  "type": "Literal", 
+                  "value": 1
+                }
+              }
+            ]
+          }
+        }
+      }, 
+      "attrs": null
+    }
+  ]
+}
