@@ -1,0 +1,869 @@
+{
+  "type": "LOL", 
+  "body": [
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandNameHash"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "release"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "testing"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Aurora"
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandNameDeep"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "masculine"
+            }, 
+            "value": {
+              "type": "Hash", 
+              "content": [
+                {
+                  "type": "HashItem", 
+                  "key": {
+                    "type": "Identifier", 
+                    "name": "nominative"
+                  }, 
+                  "value": {
+                    "type": "Hash", 
+                    "content": [
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "short"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Firefox"
+                        }, 
+                        "default": false
+                      }, 
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "long"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Mozilla Firefox"
+                        }, 
+                        "default": false
+                      }
+                    ]
+                  }, 
+                  "default": false
+                }, 
+                {
+                  "type": "HashItem", 
+                  "key": {
+                    "type": "Identifier", 
+                    "name": "genitive"
+                  }, 
+                  "value": {
+                    "type": "Hash", 
+                    "content": [
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "short"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Firefox's"
+                        }, 
+                        "default": false
+                      }, 
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "long"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Mozilla Firefox's"
+                        }, 
+                        "default": false
+                      }
+                    ]
+                  }, 
+                  "default": false
+                }
+              ]
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "feminine"
+            }, 
+            "value": {
+              "type": "Hash", 
+              "content": [
+                {
+                  "type": "HashItem", 
+                  "key": {
+                    "type": "Identifier", 
+                    "name": "nominative"
+                  }, 
+                  "value": {
+                    "type": "Hash", 
+                    "content": [
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "short"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Aurora"
+                        }, 
+                        "default": false
+                      }, 
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "long"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Mozilla Aurora"
+                        }, 
+                        "default": false
+                      }
+                    ]
+                  }, 
+                  "default": false
+                }, 
+                {
+                  "type": "HashItem", 
+                  "key": {
+                    "type": "Identifier", 
+                    "name": "genitive"
+                  }, 
+                  "value": {
+                    "type": "Hash", 
+                    "content": [
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "short"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Aurora's"
+                        }, 
+                        "default": false
+                      }, 
+                      {
+                        "type": "HashItem", 
+                        "key": {
+                          "type": "Identifier", 
+                          "name": "long"
+                        }, 
+                        "value": {
+                          "type": "String", 
+                          "content": "Mozilla Aurora's"
+                        }, 
+                        "default": false
+                      }
+                    ]
+                  }, 
+                  "default": false
+                }
+              ]
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "channels"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "testing"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "testing"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "release"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "release"
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "length"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "short"
+          }, 
+          {
+            "type": "String", 
+            "content": "long"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about1"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "Identifier", 
+            "name": "brandName"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about2"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "release"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about4"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "String", 
+              "content": "release"
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about3"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "testing"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about5"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "String", 
+              "content": "testing"
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about21"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "Identifier", 
+            "name": "brandNameDeep"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about22"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameDeep"
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "feminine"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about23"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameDeep"
+            }, 
+            "property": {
+              "type": "String", 
+              "content": "feminine"
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about24"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandNameDeep"
+              }, 
+              "property": {
+                "type": "Identifier", 
+                "name": "feminine"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "genitive"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about25"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandNameDeep"
+              }, 
+              "property": {
+                "type": "String", 
+                "content": "feminine"
+              }, 
+              "computed": true
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "genitive"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about26"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandNameDeep"
+              }, 
+              "property": {
+                "type": "String", 
+                "content": "feminine"
+              }, 
+              "computed": true
+            }, 
+            "property": {
+              "type": "String", 
+              "content": "genitive"
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about27"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "PropertyExpression", 
+                "expression": {
+                  "type": "Identifier", 
+                  "name": "brandNameDeep"
+                }, 
+                "property": {
+                  "type": "Identifier", 
+                  "name": "feminine"
+                }, 
+                "computed": false
+              }, 
+              "property": {
+                "type": "Identifier", 
+                "name": "genitive"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "long"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about31"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "channels"
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about32"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "channels"
+              }, 
+              "property": {
+                "type": "Identifier", 
+                "name": "testing"
+              }, 
+              "computed": false
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about33"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandNameHash"
+            }, 
+            "property": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "channels"
+              }, 
+              "property": {
+                "type": "String", 
+                "content": "testing"
+              }, 
+              "computed": true
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about34"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "PropertyExpression", 
+                "expression": {
+                  "type": "Identifier", 
+                  "name": "brandNameDeep"
+                }, 
+                "property": {
+                  "type": "Identifier", 
+                  "name": "feminine"
+                }, 
+                "computed": false
+              }, 
+              "property": {
+                "type": "Identifier", 
+                "name": "genitive"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "PropertyExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "length"
+              }, 
+              "property": {
+                "type": "Literal", 
+                "value": 1
+              }, 
+              "computed": true
+            }, 
+            "computed": true
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }
+  ]
+}
