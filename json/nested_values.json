@@ -5,7 +5,190 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName1"
+        "name": "brandName11"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Firefox"
+              }, 
+              {
+                "type": "String", 
+                "content": "Firefox's"
+              }
+            ]
+          }, 
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Aurora"
+              }, 
+              {
+                "type": "String", 
+                "content": "Aurora's"
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName12"
+      }, 
+      "index": [
+        {
+          "type": "Literal", 
+          "value": 1
+        }
+      ], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Firefox"
+              }, 
+              {
+                "type": "String", 
+                "content": "Firefox's"
+              }
+            ]
+          }, 
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Aurora"
+              }, 
+              {
+                "type": "String", 
+                "content": "Aurora's"
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName13"
+      }, 
+      "index": [
+        {
+          "type": "Literal", 
+          "value": 1
+        }, 
+        {
+          "type": "Literal", 
+          "value": 1
+        }
+      ], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Firefox"
+              }, 
+              {
+                "type": "String", 
+                "content": "Firefox's"
+              }
+            ]
+          }, 
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Aurora"
+              }, 
+              {
+                "type": "String", 
+                "content": "Aurora's"
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName14"
+      }, 
+      "index": [
+        {
+          "type": "Literal", 
+          "value": 7
+        }
+      ], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Firefox"
+              }, 
+              {
+                "type": "String", 
+                "content": "Firefox's"
+              }
+            ]
+          }, 
+          {
+            "type": "Array", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Aurora"
+              }, 
+              {
+                "type": "String", 
+                "content": "Aurora's"
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName21"
       }, 
       "index": [], 
       "value": {
@@ -94,7 +277,7 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName2"
+        "name": "brandName22"
       }, 
       "index": [], 
       "value": {
@@ -168,7 +351,7 @@
                     "type": "String", 
                     "content": "Aurora's"
                   }, 
-                  "default": false
+                  "default": true
                 }
               ]
             }, 
@@ -183,7 +366,7 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName3"
+        "name": "brandName23"
       }, 
       "index": [
         {
@@ -277,7 +460,7 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName4"
+        "name": "brandName24"
       }, 
       "index": [
         {

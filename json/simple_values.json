@@ -44,7 +44,12 @@
         "type": "Identifier", 
         "name": "brandName12"
       }, 
-      "index": [], 
+      "index": [
+        {
+          "type": "Literal", 
+          "value": 1
+        }
+      ], 
       "value": {
         "type": "Array", 
         "content": [
