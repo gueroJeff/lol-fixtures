@@ -5,7 +5,67 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName1"
+        "name": "brandName"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName11"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "Firefox"
+          }, 
+          {
+            "type": "String", 
+            "content": "Aurora"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName12"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Array", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "Firefox"
+          }, 
+          {
+            "type": "String", 
+            "content": "Aurora"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName21"
       }, 
       "index": [], 
       "value": {
@@ -44,7 +104,7 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName2"
+        "name": "brandName22"
       }, 
       "index": [], 
       "value": {
@@ -83,7 +143,7 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName3"
+        "name": "brandName23"
       }, 
       "index": [
         {
@@ -127,7 +187,51 @@
       "type": "Entity", 
       "id": {
         "type": "Identifier", 
-        "name": "brandName4"
+        "name": "brandName24"
+      }, 
+      "index": [
+        {
+          "type": "String", 
+          "content": "neutral"
+        }
+      ], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "masculine"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "feminine"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Aurora"
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName25"
       }, 
       "index": [
         {

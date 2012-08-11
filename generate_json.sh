@@ -11,5 +11,7 @@ OPTS="-t json"
 for LOL in $(ls -1 $HERE/*.lol);
 do
     NAME=$(basename $LOL .lol);
-    python $DUMP $OPTS $LOL > $HERE/${NAME}.json
+    echo -n "  parsing $LOL..."
+    python $DUMP $OPTS $LOL > $HERE/json/${NAME}.json
+    echo " done"
 done
