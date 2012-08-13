@@ -1,0 +1,134 @@
+{
+  "type": "LOL", 
+  "body": [
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "orgName"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Mozilla"
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName1"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "Identifier", 
+            "name": "orgName"
+          }, 
+          {
+            "type": "String", 
+            "content": " Firefox"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about1"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "Identifier", 
+            "name": "brandName1"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName2"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "Identifier", 
+            "name": "about2"
+          }, 
+          {
+            "type": "String", 
+            "content": " Firefox"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about2"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "Identifier", 
+            "name": "brandName2"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about3"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "Identifier", 
+            "name": "about3"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }
+  ]
+}
