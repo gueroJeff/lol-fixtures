@@ -1,0 +1,1053 @@
+{
+  "type": "LOL", 
+  "body": [
+    {
+      "type": "Comment", 
+      "content": " basic values "
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName1"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "String", 
+            "content": "Mozilla Firefox"
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about1"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName1"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName2"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": [
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "win"
+                }, 
+                "value": {
+                  "type": "String", 
+                  "content": "Firefox on Windows"
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "linux"
+                }, 
+                "value": {
+                  "type": "String", 
+                  "content": "Firefox on Linux"
+                }, 
+                "default": false
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about2"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName2"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about2Win"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "AttributeExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandName2"
+              }, 
+              "attribute": {
+                "type": "Identifier", 
+                "name": "title"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "win"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about2Linux"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "AttributeExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandName2"
+              }, 
+              "attribute": {
+                "type": "Identifier", 
+                "name": "title"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "linux"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Comment", 
+      "content": " relative references "
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName3"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "ComplexString", 
+            "content": [
+              {
+                "type": "String", 
+                "content": "Mozilla "
+              }, 
+              {
+                "type": "ThisExpression"
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about3"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName3"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName4"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": [
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "win"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "ThisExpression"
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Windows"
+                    }
+                  ]
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "linux"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "ThisExpression"
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Linux"
+                    }
+                  ]
+                }, 
+                "default": false
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about4"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName4"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about4Win"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "AttributeExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandName4"
+              }, 
+              "attribute": {
+                "type": "Identifier", 
+                "name": "title"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "win"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about4Linux"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "PropertyExpression", 
+            "expression": {
+              "type": "AttributeExpression", 
+              "expression": {
+                "type": "Identifier", 
+                "name": "brandName4"
+              }, 
+              "attribute": {
+                "type": "Identifier", 
+                "name": "title"
+              }, 
+              "computed": false
+            }, 
+            "property": {
+              "type": "Identifier", 
+              "name": "linux"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName5"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "nominative"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "genitive"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox's"
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": [
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "win"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "ThisExpression"
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Windows"
+                    }
+                  ]
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "linux"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "ThisExpression"
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Linux"
+                    }
+                  ]
+                }, 
+                "default": false
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName6"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "nominative"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "genitive"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox's"
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": [
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "win"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "PropertyExpression", 
+                      "expression": {
+                        "type": "ThisExpression"
+                      }, 
+                      "property": {
+                        "type": "Identifier", 
+                        "name": "genitive"
+                      }, 
+                      "computed": false
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Windows"
+                    }
+                  ]
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "linux"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "PropertyExpression", 
+                      "expression": {
+                        "type": "ThisExpression"
+                      }, 
+                      "property": {
+                        "type": "Identifier", 
+                        "name": "genitive"
+                      }, 
+                      "computed": false
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Linux"
+                    }
+                  ]
+                }, 
+                "default": false
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName7"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "ThisExpression"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "String", 
+            "content": "Mozilla Firefox"
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Comment", 
+      "content": " indexes "
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName9"
+      }, 
+      "index": [
+        {
+          "type": "String", 
+          "content": "beta"
+        }
+      ], 
+      "value": {
+        "type": "Hash", 
+        "content": [
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "release"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "beta"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Firefox Beta"
+            }, 
+            "default": false
+          }, 
+          {
+            "type": "HashItem", 
+            "key": {
+              "type": "Identifier", 
+              "name": "testing"
+            }, 
+            "value": {
+              "type": "String", 
+              "content": "Aurora"
+            }, 
+            "default": false
+          }
+        ]
+      }, 
+      "attrs": {
+        "accesskey": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "accesskey"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": [
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "release"
+                }, 
+                "value": {
+                  "type": "String", 
+                  "content": "F"
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "beta"
+                }, 
+                "value": {
+                  "type": "String", 
+                  "content": "B"
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "testing"
+                }, 
+                "value": {
+                  "type": "String", 
+                  "content": "A"
+                }, 
+                "default": false
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about9"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "Identifier", 
+            "name": "brandName9"
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about9Accesskey"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "Press "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName9"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "accesskey"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Comment", 
+      "content": " cyclic references "
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName10"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": [
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "win"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "PropertyExpression", 
+                      "expression": {
+                        "type": "AttributeExpression", 
+                        "expression": {
+                          "type": "ThisExpression"
+                        }, 
+                        "attribute": {
+                          "type": "Identifier", 
+                          "name": "title"
+                        }, 
+                        "computed": false
+                      }, 
+                      "property": {
+                        "type": "Identifier", 
+                        "name": "self"
+                      }, 
+                      "computed": false
+                    }, 
+                    {
+                      "type": "String", 
+                      "content": " on Windows"
+                    }
+                  ]
+                }, 
+                "default": false
+              }, 
+              {
+                "type": "HashItem", 
+                "key": {
+                  "type": "Identifier", 
+                  "name": "self"
+                }, 
+                "value": {
+                  "type": "ComplexString", 
+                  "content": [
+                    {
+                      "type": "ThisExpression"
+                    }
+                  ]
+                }, 
+                "default": false
+              }
+            ]
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about10"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName10"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "brandName11"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "String", 
+        "content": "Firefox"
+      }, 
+      "attrs": {
+        "title": {
+          "type": "Attribute", 
+          "key": {
+            "type": "Identifier", 
+            "name": "title"
+          }, 
+          "value": {
+            "type": "Hash", 
+            "content": []
+          }, 
+          "local": false
+        }
+      }, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "about11"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "String", 
+            "content": "About "
+          }, 
+          {
+            "type": "AttributeExpression", 
+            "expression": {
+              "type": "Identifier", 
+              "name": "brandName11"
+            }, 
+            "attribute": {
+              "type": "Identifier", 
+              "name": "title"
+            }, 
+            "computed": false
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }
+  ]
+}
