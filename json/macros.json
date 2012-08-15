@@ -2,6 +2,34 @@
   "type": "LOL", 
   "body": [
     {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callFib"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "fib"
+            }, 
+            "arguments": [
+              {
+                "type": "Literal", 
+                "value": 20
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
       "type": "Macro", 
       "id": {
         "type": "Identifier", 
@@ -130,6 +158,34 @@
       "attrs": {}
     }, 
     {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callFac"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "fac"
+            }, 
+            "arguments": [
+              {
+                "type": "Literal", 
+                "value": 5
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
       "type": "Macro", 
       "id": {
         "type": "Identifier", 
@@ -211,6 +267,75 @@
         }
       }, 
       "attrs": {}
+    }, 
+    {
+      "type": "Macro", 
+      "id": {
+        "type": "Identifier", 
+        "name": "zero"
+      }, 
+      "args": [
+        {
+          "type": "VariableExpression", 
+          "id": {
+            "type": "Identifier", 
+            "name": "n"
+          }
+        }
+      ], 
+      "expression": {
+        "type": "Literal", 
+        "value": 0
+      }, 
+      "attrs": {}
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callZeroOrFac"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "LogicalExpression", 
+            "operator": {
+              "type": "LogicalOperator", 
+              "token": "||"
+            }, 
+            "left": {
+              "type": "CallExpression", 
+              "callee": {
+                "type": "Identifier", 
+                "name": "zero"
+              }, 
+              "arguments": [
+                {
+                  "type": "Literal", 
+                  "value": 1
+                }
+              ]
+            }, 
+            "right": {
+              "type": "CallExpression", 
+              "callee": {
+                "type": "Identifier", 
+                "name": "fac"
+              }, 
+              "arguments": [
+                {
+                  "type": "Literal", 
+                  "value": 5
+                }
+              ]
+            }
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
     }
   ]
 }
