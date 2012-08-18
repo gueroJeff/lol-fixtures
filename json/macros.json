@@ -117,6 +117,353 @@
       "local": false
     }, 
     {
+      "type": "Macro", 
+      "id": {
+        "type": "Identifier", 
+        "name": "isFalsy"
+      }, 
+      "args": [
+        {
+          "type": "VariableExpression", 
+          "id": {
+            "type": "Identifier", 
+            "name": "n"
+          }
+        }
+      ], 
+      "expression": {
+        "type": "ConditionalExpression", 
+        "test": {
+          "type": "UnaryExpression", 
+          "operator": {
+            "type": "UnaryOperator", 
+            "token": "!"
+          }, 
+          "argument": {
+            "type": "VariableExpression", 
+            "id": {
+              "type": "Identifier", 
+              "name": "n"
+            }
+          }
+        }, 
+        "consequent": {
+          "type": "String", 
+          "content": "falsy"
+        }, 
+        "alternate": {
+          "type": "String", 
+          "content": "truthy"
+        }
+      }, 
+      "attrs": {}
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy1"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "Literal", 
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy2"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "ComplexString", 
+                "content": []
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy3"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "Array", 
+                "content": []
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy4"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "Hash", 
+                "content": []
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy5"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "Literal", 
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy6"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "String", 
+                "content": "text"
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy7"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "Array", 
+                "content": [
+                  {
+                    "type": "String", 
+                    "content": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsFalsy8"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isFalsy"
+            }, 
+            "arguments": [
+              {
+                "type": "Hash", 
+                "content": [
+                  {
+                    "type": "HashItem", 
+                    "key": {
+                      "type": "Identifier", 
+                      "name": "one"
+                    }, 
+                    "value": {
+                      "type": "String", 
+                      "content": "text"
+                    }, 
+                    "default": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
+      "type": "Macro", 
+      "id": {
+        "type": "Identifier", 
+        "name": "isTruthy"
+      }, 
+      "args": [
+        {
+          "type": "VariableExpression", 
+          "id": {
+            "type": "Identifier", 
+            "name": "n"
+          }
+        }
+      ], 
+      "expression": {
+        "type": "ConditionalExpression", 
+        "test": {
+          "type": "VariableExpression", 
+          "id": {
+            "type": "Identifier", 
+            "name": "n"
+          }
+        }, 
+        "consequent": {
+          "type": "String", 
+          "content": "truthy"
+        }, 
+        "alternate": {
+          "type": "String", 
+          "content": "falsy"
+        }
+      }, 
+      "attrs": {}
+    }, 
+    {
+      "type": "Entity", 
+      "id": {
+        "type": "Identifier", 
+        "name": "callIsTruthy"
+      }, 
+      "index": [], 
+      "value": {
+        "type": "ComplexString", 
+        "content": [
+          {
+            "type": "CallExpression", 
+            "callee": {
+              "type": "Identifier", 
+              "name": "isTruthy"
+            }, 
+            "arguments": [
+              {
+                "type": "Literal", 
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }, 
+      "attrs": {}, 
+      "local": false
+    }, 
+    {
       "type": "Entity", 
       "id": {
         "type": "Identifier", 

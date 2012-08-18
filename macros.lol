@@ -4,6 +4,18 @@
 <zero($n) { 0 }>
 <callZero "{{ zero(1) }}">
 
+<isFalsy($n) { !$n ? 'falsy' : 'truthy' }>
+<callIsFalsy1 "{{ isFalsy(0) }}">
+<callIsFalsy2 "{{ isFalsy('') }}">
+<callIsFalsy3 "{{ isFalsy([]) }}">
+<callIsFalsy4 "{{ isFalsy({}) }}">
+<callIsFalsy5 "{{ isFalsy(1) }}">
+<callIsFalsy6 "{{ isFalsy('text') }}">
+<callIsFalsy7 "{{ isFalsy(['text']) }}">
+<callIsFalsy8 "{{ isFalsy({one: 'text'}) }}">
+
+<isTruthy($n) { $n ? 'truthy' : 'falsy' }>
+<callIsTruthy "{{ isTruthy(0) }}">
 
 <callFib "{{ fib(20) }}">
 <fib($n) { $n == 0 ?
