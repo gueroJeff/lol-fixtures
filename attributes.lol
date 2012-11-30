@@ -88,7 +88,6 @@
 <about10 "About {{ brandName10..title }}">
 
 <brandName11 "Firefox"
-  title: {
-  }
+  title: "{{ ~..title }}"
 >
 <about11 "About {{ brandName11..title }}">
