@@ -1,2 +1,2 @@
 <a "A (pl)">
-import ('c.lol')
+import('c.lol')

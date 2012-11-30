@@ -1,2 +1,2 @@
 <c "C (pl)">
-import ('a.lol')
+import('a.lol')
