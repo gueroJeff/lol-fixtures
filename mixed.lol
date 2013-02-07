@@ -11,7 +11,7 @@
 >
 
 /* Firefox/Aurora has been updated */
-<updated[brandName.._gender] {
+<updated[brandName::_gender] {
   masculine: "{{ brandName }} został zaktualizowany.",
   feminine: "{{ brandName }} została zaktualizowana."
 }>

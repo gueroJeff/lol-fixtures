@@ -3,7 +3,7 @@
 <brandName1 "Firefox"
   title: "Mozilla Firefox"
 >
-<about1 "About {{ brandName1..title }}">
+<about1 "About {{ brandName1::title }}">
 
 <brandName2 "Firefox"
   title: {
@@ -11,9 +11,9 @@
     linux: "Firefox on Linux"
   }
 >
-<about2 "About {{ brandName2..title }}">
-<about2Win "About {{ brandName2..title.win }}">
-<about2Linux "About {{ brandName2..title.linux }}">
+<about2 "About {{ brandName2::title }}">
+<about2Win "About {{ brandName2::title.win }}">
+<about2Linux "About {{ brandName2::title.linux }}">
 
 
 /* relative references */
@@ -21,7 +21,7 @@
 <brandName3 "Firefox"
   title: "Mozilla {{ ~ }}"
 >
-<about3 "About {{ brandName3..title }}">
+<about3 "About {{ brandName3::title }}">
 
 <brandName4 "Firefox"
   title: {
@@ -30,9 +30,9 @@
   }
 >
 
-<about4 "About {{ brandName4..title }}">
-<about4Win "About {{ brandName4..title.win }}">
-<about4Linux "About {{ brandName4..title.linux }}">
+<about4 "About {{ brandName4::title }}">
+<about4Win "About {{ brandName4::title.win }}">
+<about4Linux "About {{ brandName4::title.linux }}">
 
 <brandName5 {
   nominative: "Firefox",
@@ -54,7 +54,7 @@
   }
 >
 
-<brandName7 "{{ ~..title }}"
+<brandName7 "{{ ~::title }}"
   title: "Mozilla Firefox"
 >
 
@@ -73,7 +73,7 @@
   }
 >
 <about9 "About {{ brandName9 }}">
-<about9Accesskey "Press {{ brandName9..accesskey }}">
+<about9Accesskey "Press {{ brandName9::accesskey }}">
 
 
 
@@ -81,13 +81,13 @@
 
 <brandName10 "Firefox"
   title: {
-    win: "{{ ~..title.self }} on Windows",
+   *win: "{{ ~::title.self }} on Windows",
     self: "{{ ~ }}"
   }
 >
-<about10 "About {{ brandName10..title }}">
+<about10 "About {{ brandName10::title }}">
 
 <brandName11 "Firefox"
-  title: "{{ ~..title }}"
+  title: "{{ ~::title }}"
 >
-<about11 "About {{ brandName11..title }}">
+<about11 "About {{ brandName11::title }}">
