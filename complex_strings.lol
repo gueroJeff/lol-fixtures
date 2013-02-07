@@ -29,7 +29,6 @@
   testing: 'testing',
   release: 'release'
 }>
-<length ['short', 'long']>
 
 <about1 "About {{ brandName }}">
 <about2 "About {{ brandNameHash.release }}">
@@ -48,4 +47,3 @@
 <about31 "About {{ brandNameHash[channels] }}">
 <about32 "About {{ brandNameHash[channels.testing] }}">
 <about33 "About {{ brandNameHash[channels['testing']] }}">
-<about34 "About {{ brandNameDeep.feminine.genitive[length[1]] }}">

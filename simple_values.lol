@@ -1,8 +1,5 @@
 <brandName "Firefox">
 
-<brandName11 ['Firefox', 'Aurora']>
-<brandName12[1] ['Firefox', 'Aurora']>
-
 <brandName21 {
   masculine: "Firefox",
   feminine: "Aurora"
