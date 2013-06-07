@@ -7,7 +7,7 @@
 
 <brandName2 "Firefox"
   title: {
-    win: "Firefox on Windows",
+   *win: "Firefox on Windows",
     linux: "Firefox on Linux"
   }
 >
@@ -25,7 +25,7 @@
 
 <brandName4 "Firefox"
   title: {
-    win: "{{ ~ }} on Windows",
+   *win: "{{ ~ }} on Windows",
     linux: "{{ ~ }} on Linux"
   }
 >
@@ -35,7 +35,7 @@
 <about4Linux "About {{ brandName4::title.linux }}">
 
 <brandName5 {
-  nominative: "Firefox",
+ *nominative: "Firefox",
   genitive: "Firefox's"
 }
   title: {
@@ -45,11 +45,11 @@
 >
 
 <brandName6 {
-  nominative: "Firefox",
+ *nominative: "Firefox",
   genitive: "Firefox's"
 }
   title: {
-    win: "{{ ~.genitive }} on Windows",
+   *win: "{{ ~.genitive }} on Windows",
     linux: "{{ ~.genitive }} on Linux"
   }
 >

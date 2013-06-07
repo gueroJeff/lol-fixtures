@@ -1,5 +1,5 @@
 <brandName {
-  nom: "Aurora",
+ *nom: "Aurora",
   gen: "Aurory",
   dat: "Aurorze",
   acc: "Aurorę",
@@ -26,7 +26,7 @@
 
 <message {
   one: {
-    nom: "wiadomość",
+   *nom: "wiadomość",
     gen: "wiadomości",
     dat: "wiadomości",
     acc: "wiadomość",
@@ -34,8 +34,8 @@
     loc: "wiadomości",
     voc: "wiadomości"
   },
-  *many: {
-    nom: "wiadomości",
+ *many: {
+   *nom: "wiadomości",
     gen: "wiadomości",
     dat: "wiadomościom",
     acc: "wiadomości",

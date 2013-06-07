@@ -8,28 +8,28 @@
 <about3 "About {{ about3 }}">
 
 <brandName41 {
-  release: "Firefox",
+ *release: "Firefox",
   beta: "{{ brandName41.release }}",
   testing: "Aurora"
 }>
 <about41 "About {{ brandName41 }}">
 
 <brandName42 {
-  release: "Firefox",
+ *release: "Firefox",
   beta: "{{ brandName42 }}",
   testing: "Aurora"
 }>
 <about42 "About {{ brandName42 }}">
 
 <brandName43 {
-  release: "Firefox",
+ *release: "Firefox",
   beta: "{{ ~.release }}",
   testing: "Aurora"
 }>
 <about43 "About {{ brandName43 }}">
 
 <brandName44 {
-  release: "Firefox",
+ *release: "Firefox",
   beta: "{{ ~ }}",
   testing: "Aurora"
 }>
